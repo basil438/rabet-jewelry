@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rabet Jewelry and Accessories</title>
+    <!-- Google Font -->
+     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Popping:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header & Hero Section -->
+    <header class="navbar">
+        <div class="nav-top">
+            <!-- Left spacer or optional secondary element to balance the flex layout -->
+            <div class="nav-left-spacer"></div>
+
+            <!-- Centered Brand Info -->
+            <div class="brand-info">
+                <h1 class="store-title">📿Rabet Jewelry💍</h1>
+                <p class="store-subtitle">Discover the perfect blend of style and affordability</p>
+            </div>
+
+            <!-- Floating Cart Button (Top Right) -->
+            <div class="nav-actions">
+                <button id="cart-toggle-btn" class="btn-cart">
+                    🛒 (Cart <span id="cart-count">0</span>)
+                </button>
+            </div>
+
+            <!-- Search Bar & Filter Buttons -->
+            <div class="store-controls-inline">
+                <input type="text" id="search-input" placeholder="Search necklaces, watches, bracelets..." class="search-bar">
+                <div class="category-filters">
+                    <button class="filter-btn active" data-category="all">All</button>
+                    <button class="filter-btn" data-category="necklaces">Necklaces</button>
+                    <button class="filter-btn" data-category="watches">Watches</button>
+                    <button class="filter-btn" data-category="handbags">Handbags</button>
+                    <button class="filter-btn" data-category="totebags">Totebags</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+            <!-- Product Grid -->
+            <div class="product-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; width: 100%;">
+
+                <!-- Product 1 -->
+                <div class="product-card" data-category="watches">
+                    <img src="images/pinkwatch.jpeg" alt="Watch and Bracelet 1">
+                    <div class="product-info">
+                        <span class="badge">Watches</span>
+                        <h3>Elegant watch and bracelet</h3>
+                        <p class="price">ksh.600</p>
+                        <p class="description">An elegant combination of a stylish watch and a shiny eye catching bracelet.</p>
+                        <div class="card-buttons">
+                            <button class="btn btn-add-cart">Add to Cart</button>
+                            <a href="https://wa.me/254119871223?text=Hello!%20I%20am%20interested%20in%20the%20Elegant%20watch%20and%20bracelet." 
+                             target="_blank" 
+                             class="btn-whatsapp-direct">
+                             Order via WhatsApp   
+                            </a>
+                        </div>
+                     </div>
+                </div>
+
+                <!--Product 2 -->
+                <div class="product-card" data-category="watches">
+                    <img src="images/blackwatch.jpeg" alt="Watch and Bracelet 2">
+                    <div class="product-info">
+                        <span class="badge">Watches</span>
+                        <h3>Elegant watch and bracelet</h3>
+                        <p class="price">ksh.600</p>
+                        <p class="description">An elegant combination of a stylish watch and a shiny eye catching bracelet.</p>
+                        <div class="card-buttons">
+                            <button class="btn btn-add-cart">Add to Cart</button>
+                            <a href="https://wa.me/254119871223?text=Hello!%20I%20am%20interested%20in%20the%20Elegant%20watch%20and%20bracelet." 
+                             target="_blank" 
+                             class="btn-whatsapp-direct">
+                             Order via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Product 3 -->
+                <div class="product-card" data-category="watches">
+                    <img src="images/smartwatchcomb.jpeg" alt="Watch and Bracelet 3">
+                    <div class="product-info">
+                        <span class="badge">Watches</span>
+                        <h3>Elegant watch and bracelet</h3>
+                        <p class="price">ksh.600</p>
+                        <p class="description">An elegant combination of a stylish watch and a pearl eye catching bracelet,necklace and a pair of earrings.</p>
+                        <div class="card-buttons">
+                            <button class="btn btn-add-cart">Add to Cart</button>
+                            <a href="https://wa.me/254119871223?text=Hello!%20I%20am%20interested%20in%20the%20Elegant%20watch%20and%20bracelet." 
+                             target="_blank" 
+                             class="btn-whatsapp-direct">
+                             Order via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Product 4 -->
+                <div class="product-card" data-category="watches">
+                    <img src="images/watchcombo4.jpeg" alt="Watch and necklace 1">
+                    <div class="product-info">
+                        <span class="badge">Watches</span>
+                        <h3>Elegant watch and necklace</h3>
+                        <p class="price">ksh.550</p>
+                        <p class="description">A beautiful combination a wrist watch with a stunning necklace accompanied with a pair of earings,bracelet and a ring .Available in gold and silver.</p>
+                        <div class="card-buttons">
+                            <button class="btn btn-add-cart">Add to Cart</button>
+                            <a href="https://wa.me/254119871223?text=Hello!%20I%20am%20interested%20in%20the%20Elegant%20watch%20and%20necklace." 
+                             target="_blank" 
+                             class="btn-whatsapp-direct">
+                             Order via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5-->
+                <div class="product-card" data-category="watches">
+                    <img src="images/watchcombo8.jpeg" alt="Watch and bracelet 4">
+                    <div class="product-info">
+                        <span class="badge">Watches</span>
+                        <h3>Elegant watch and bracelet</h3>
+                        <p class="price">ksh.600</p>
+                        <p class="description">A beautiful combination a wrist watch with stunning bracelets.</p>
+                        <div class="card-buttons">
+                            <button class="btn btn-add-cart">Add to Cart</button>
+                            <a href="https://wa.me/254119871223?text=Hello!%20I%20am%20interested%20in%20the%20Elegant%20watch%20and%20bracelet." 
+                             target="_blank" 
+                             class="btn-whatsapp-direct">
+                             Order via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card" data-category="watches">
+                    <img src="images/watchcombo6.jpeg" alt="Watch and necklace 2">
+                    <div class="product-info">
+                        <span class="badge">Watches</span>
+                        <h3>Elegant watch and necklace</h3>
+                        <p class="price">ksh.550</p>
+                        <p class="description">A beautiful combination a wrist watch with a stunning necklace accompanied with a pair of earings,bracelet and a ring.</p>
+                        <div class="card-buttons">
+                            <button class="btn btn-add-cart">Add to Cart</button>
+                            <a href="https://wa.me/254119871223?text=Hello!%20I%20am%20interested%20in%20the%20Elegant%20watch%20and%20necklace." 
+                             target="_blank" 
+                             class="btn-whatsapp-direct">
+                             Order via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-card" data-category="watches">
+                    <img src="images/watchcombo7.jpeg" alt="Watch and necklace 4">
+                    <div class="product-info">
+                        <span class="badge">Watches</span>
+                        <h3>Elegant watch and necklace</h3>
+                        <p class="price">ksh.550</p>
+                        <p class="description">A beautiful combination a wrist watch with a stunning necklace accompanied with a pair of earings and a bracelet.</p>
+                        <div class="card-buttons">
+                            <button class="btn btn-add-cart">Add to Cart</button>
+                            <a href="https://wa.me/254119871223?text=Hello!%20I%20am%20interested%20in%20the%20Elegant%20watch%20and%20necklace." 
+                             target="_blank" 
+                             class="btn-whatsapp-direct">
+                             Order via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product-card" data-category="necklaces">
+                    <img src="images/bownecklace1.jpeg" alt="Necklace 1">
+                    <div class="product-info">
+                        <span class="badge">Necklaces</span>
+                        <h3>Stunning Necklace</h3>
+                        <p class="price">ksh.300</p>
+                        <p class="description">A beautiful eye catching silver bow like necklace.</p>
+                        <div class="card-buttons">
+                            <button class="btn btn-add-cart">Add to Cart</button>
+                            <a href="https://wa.me/254119871223?text=Hello!%20I%20am%20interested%20in%20the%20Stunning%20Necklace." 
+                             target="_blank" 
+                             class="btn-whatsapp-direct">
+                             Order via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 9 -->
+                <div class="product-card" data-category="necklaces">
+                    <img src="images/whitepearlnecklace.jpeg" alt="Necklace 2">
+                    <div class="product-info">
+                        <span class="badge">Necklaces</span>
+                        <h3>White Pearl Necklace</h3>
+                        <p class="price">ksh.300</p>
+                        <p class="description">A beautiful white pearl necklace.</p>
+                        <div class="card-buttons">
+                            <button class="btn btn-add-cart">Add to Cart</button>
+                            <a href="https://wa.me/254119871223?text=Hello!%20I%20am%20interested%20in%20the%20White%20Pearl%20Necklace." 
+                             target="_blank" 
+                             class="btn-whatsapp-direct">
+                             Order via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 10 -->
+                <div class="product-card" data-category="necklaces">  
+                    <img src="images/butterflynecklace1.jpeg" alt="Necklace 3">
+                    <div class="product-info">
+                        <span class="badge">Necklaces</span>
+                        <h3>Butterfly Necklace</h3>
+                        <p class="price">ksh.300</p>
+                        <p class="description">A beautiful butterfly design necklace.</p>
+                        <div class="card-buttons">
+                            <button class="btn btn-add-cart">Add to Cart</button>
+                            <a href="https://wa.me/254119871223?text=Hello!%20I%20am%20interested%20in%20the%20Butterfly%20Necklace." 
+                             target="_blank" 
+                             class="btn-whatsapp-direct">
+                             Order via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 11 -->
+                <div class="product-card" data-category="necklaces">
+                    <img src="images/bestfriendsnecklaces.jpeg" alt="Necklace 4">
+                    <div class="product-info">
+                        <span class="badge">Necklaces</span>
+                        <h3>Best Friends Necklace</h3>
+                        <p class="price">ksh.300</p>
+                        <p class="description">A beautiful best friends heart design necklace.</p>
+                        <div class="card-buttons">
+                            <button class="btn btn-add-cart">Add to Cart</button>
+                            <a href="https://wa.me/254119871223?text=Hello!%20I%20am%20interested%20in%20the%20Best%20Friends%20Necklace." 
+                             target="_blank" 
+                             class="btn-whatsapp-direct">
+                             Order via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 12 -->
+                <div class="product-card" data-category="necklaces">  
+                    <img src="images/blueheart.jpeg" alt="Necklace 5">
+                    <div class="product-info">
+                        <span class="badge">Necklaces</span>
+                        <h3>Love flower Necklace</h3>
+                        <p class="price">ksh.300</p>
+                        <p class="description">A eye catching love flower design necklace.</p>
+                        <div class="card-buttons">
+                            <button class="btn btn-add-cart">Add to Cart</button>
+                            <a href="https://wa.me/254119871223?text=Hello!%20I%20am%20interested%20in%20the%20Love%20Flower%20Necklace." 
+                             target="_blank" 
+                             class="btn-whatsapp-direct">
+                             Order via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Product 13-->
+                <div class="product-card" data-category="necklaces">
+                    <img src="images/3in1necklace.jpeg" alt="Necklace 6">
+                    <div class="product-info">
+                        <span class="badge">Necklaces</span>
+                        <h3>3-in-1 Necklace</h3>
+                        <p class="price">ksh.350</p>
+                        <p class="description">A beautiful necklace with multiple design options.</p>
+                        <div class="card-buttons">
+                            <button class="btn btn-add-cart">Add to Cart</button>
+                            <a href="https://wa.me/254119871223?text=Hello!%20I%20am%20interested%20in%20the%203-in-1%20Necklace." 
+                             target="_blank" 
+                             class="btn-whatsapp-direct">
+                             Order via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Product 14 -->
+                <div class="product-card" data-category="necklaces">
+                    <img src="images/bownecklace2.jpeg" alt="Necklace 7">
+                    <div class="product-info">
+                        <span class="badge">Necklaces</span>
+                        <h3>Bow Necklace</h3>
+                        <p class="price">ksh.300</p>
+                        <p class="description">A beautiful bow design necklace.</p>
+                        <div class="card-buttons">
+                            <button class="btn btn-add-cart">Add to Cart</button>
+                            <a href="https://wa.me/254119871223?text=Hello!%20I%20am%20interested%20in%20the%20Bow%20Necklace." 
+                             target="_blank" 
+                             class="btn-whatsapp-direct">
+                             Order via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Product 15-->
+                <div class="product-card" data-category="necklaces">
+                    <img src="images/butterflynecklace1.jpeg" alt="Necklace 8">
+                    <div class="product-info">
+                        <span class="badge">Necklaces</span>
+                        <h3>Butterfly Necklace</h3>
+                        <p class="price">ksh.300</p>
+                        <p class="description">A beautiful butterfly design necklace.</p>
+                        <div class="card-buttons">
+                            <button class="btn btn-add-cart">Add to Cart</button>
+                            <a href="https://wa.me/254119871223?text=Hello!%20I%20am%20interested%20in%20the%20Butterfly%20Necklace." 
+                             target="_blank" 
+                             class="btn-whatsapp-direct">
+                             Order via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Product 16-->
+                <div class="product-card" data-categoty="necklaces">
+                    <img src="images/heartnecklace.jpeg" alt="Necklace 9">
+                    <div class="product-info">
+                        <span class="badge">Necklaces</span>
+                        <h3>Heart Necklace</h3>
+                        <p class="price">ksh.300</p>
+                        <p class="description">A beautiful heart design necklace.</p>
+                        <div class="card-buttons">
+                            <button class="btn btn-add-cart">Add to Cart</button>
+                            <a href="https://wa.me/254119871223?text=Hello!%20I%20am%20interested%20in%20the%20Heart%20Necklace." 
+                             target="_blank" 
+                             class="btn-whatsapp-direct">
+                             Order via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Product 17-->
+                <div class="product-card" data-category="necklaces">
+                    <img src="images/zigzagnecklace.jpeg" alt="Necklace 10">
+                    <div class="product-info">
+                        <span class="badge">Necklaces</span>
+                        <h3>Zigzag Necklace</h3>
+                        <p class="price">ksh.250</p>
+                        <p class="description">A beautiful zigzag design necklace.</p>
+                        <div class="card-buttons">
+                            <button class="btn btn-add-cart">Add to Cart</button>
+                            <a href="https://wa.me/254119871223?text=Hello!%20I%20am%20interested%20in%20the%20Zigzag%20Necklace." 
+                             target="_blank" 
+                             class="btn-whatsapp-direct">
+                             Order via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Product 18-->
+                <div class="product-card" data-category="handbags">
+                    <img src="images/handbags1.jpeg" alt="Handbag 1">
+                    <div class="product-info">
+                        <span class="badge">Handbags</span>
+                        <h3>Handbag</h3>
+                        <p class="price">ksh.500</p>
+                        <p class="description">A stylish eye catching handbag.</p>
+                        <div class="card-buttons">
+                            <button class="btn btn-add-cart">Add to Cart</button>
+                            <a href="https://wa.me/254119871223?text=Hello!%20I%20am%20interested%20in%20the%20Handbag." 
+                             target="_blank" 
+                             class="btn-whatsapp-direct">
+                             Order via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Product 19-->
+                <div class="product-card" data-category="totebags">
+                    <img src="images/totebag1.jpeg" alt="Totebag 1">
+                    <div class="product-info">
+                        <span class="badge">Tote Bags</span>
+                        <h3>Tote Bag</h3>
+                        <p class="price">ksh.600</p>
+                        <p class="description">A stylish eye catching tote bag.</p>
+                        <div class="card-buttons">
+                            <button class="btn btn-add-cart">Add to Cart</button>
+                            <a href="https://wa.me/254119871223?text=Hello!%20I%20am%20interested%20in%20the%20Tote%20Bag." 
+                             target="_blank" 
+                             class="btn-whatsapp-direct">
+                             Order via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Product 20-->
+                <div class="product-card" data-category="handbags">
+                    <img src="images/handbag2.jpeg" alt="Hand bag 2">
+                    <div class="product-info">
+                        <span class="badge">Handbags</span>
+                        <h3>Handbag</h3>
+                        <p class="price">ksh.600</p>
+                        <p class="description">A stylish eye catching handbag.</p>
+                        <div class="card-buttons">
+                            <button class="btn btn-add-cart">Add to Cart</button>
+                            <a href="https://wa.me/254119871223?text=Hello!%20I%20am%20interested%20in%20the%20Handbag." 
+                             target="_blank" 
+                             class="btn-whatsapp-direct">
+                             Order via WhatsApp 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Product 21-->
+                <div class="product-card" data-category="handbags">
+                    <img src="images/handbag3.jpeg" alt="Hand bag 3">
+                    <div class="product-info">
+                        <span class="badge">Handbags</span>
+                        <h3>Handbag</h3>
+                        <p class="price">ksh.600</p>
+                        <p class="description">A stylish handbag.</p>
+                        <div class="card-buttons">
+                            <button class="btn btn-add-cart">Add to Cart</button>
+                            <a href="https://wa.me/254119871223?text=Hello!%20I%20am%20interested%20in%20the%20Handbag." 
+                             target="_blank" 
+                             class="btn-whatsapp-direct">
+                             Order via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Product 22-->
+                <div class="product-card" data-category="handbags">
+                    <img src="images/handbag4.jpeg" alt="Hand bag 4">
+                    <div class="product-info">
+                        <span class="badge">Handbags</span>
+                        <h3>Handbag</h3>
+                        <p class="price">ksh.600</p>
+                        <p class="description">A stylish handbag.</p>
+                        <div class="card-buttons">
+                            <button class="btn btn-add-cart">Add to Cart</button>
+                            <a href="https://wa.me/254119871223?text=Hello!%20I%20am%20interested%20in%20the%20Handbag." 
+                             target="_blank" 
+                             class="btn-whatsapp-direct">
+                             Order via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Product 23-->
+                <div class="product-card" data-category="totebags">
+                    <img src="images/totebag2.jpeg" alt="Totebag 3">
+                    <div class="product-info">
+                        <span class="badge">Tote Bags</span>
+                        <h3>Tote Bag</h3>
+                        <p class="price">ksh.600</p>
+                        <p class="description">A reliable and stylishtote bag.</p>
+                        <div class="card-buttons">
+                            <button class="btn btn-add-cart">Add to Cart</button>
+                            <a href="https://wa.me/254119871223?text=Hello!%20I%20am%20interested%20in%20the%20Tote%20Bag." 
+                             target="_blank" 
+                             class="btn-whatsapp-direct">
+                             Order via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Product 24-->
+                <div class="product-card" data-category="totebags">
+                    <img src="images/totebag3.jpeg" alt="Totebag 4">
+                    <div class="product-info">
+                        <span class="badge">ToteBags</span>
+                        <h3>Tote Bag</h3>
+                        <p class="price">ksh.600</p>
+                        <p class="description">A stylish tote bag.</p>
+                        <div class="card-buttons">
+                            <button class="btn btn-add-cart">Add to Cart</button>
+                            <a href="https://wa.me/254119871223?text=Hello!%20I%20am%20interested%20in%20the%20Tote%20Bag." 
+                             target="_blank" 
+                             class="btn-whatsapp-direct">
+                             Order via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Product 25-->
+                <div class="product-card" data-category="totebags">
+                    <img src="images/totebag4.jpeg" alt="Totbag 5">
+                    <div class="product-info">
+                        <span class="badge">ToteBags</span>
+                        <h3>Tote Bag</h3>
+                        <p class="price">ksh.600</p>
+                        <p class="description">A stylish tote bag.</p>
+                        <div class="card-buttons">
+                            <button class="btn btn-add-cart">Add to Cart</button>
+                            <a href="https://wa.me/254119871223?text=Hello!%20I%20am%20interested%20in%20the%20Tote%20Bag." 
+                             target="_blank" 
+                             class="btn-whatsapp-direct">
+                             Order via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>  
+
+                <!--Product 26-->
+                <div class="product-card" data-category="totebags">
+                    <img src="images/totebag5.jpeg" alt="Totbag 6">
+                    <div class="product-info">
+                        <span class="badge">Tote Bags</span>
+                        <h3>Tote Bag</h3>
+                        <p class="price">ksh.600</p>
+                        <p class="description">A stylish tote bag.</p>
+                        <div class="card-buttons">
+                            <button class="btn btn-add-cart">Add to Cart</button>
+                            <a href="https://wa.me/254119871223?text=Hello!%20I%20am%20interested%20in%20the%20Tote%20Bag." 
+                             target="_blank" 
+                             class="btn-whatsapp-direct">
+                             Order via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Product 27-->
+                <div class="product-card" data-category="totebags">
+                    <img src="images/totebag6.jpeg" alt="Totebag 7">
+                    <div class="product-info">
+                        <span class="badge">ToteBags</span>
+                        <h3>Tote Bag</h3>
+                        <p class="price">ksh.600</p>
+                        <p class="description">A stylish tote bag.</p>
+                        <div class="card-buttons">
+                            <button class="btn btn-add-cart">Add to Cart</button>
+                            <a href="https://wa.me/254119871223?text=Hello!%20I%20am%20interested%20in%20the%20Tote%20Bag." 
+                             target="_blank" 
+                             class="btn-whatsapp-direct">
+                             Order via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>  
+
+        <!-- Shopping Cart Drawer Overlay -->
+        <div id="cart-overlay" class="cart-overlay">
+            <div class="cart-drawer">
+                <div class="cart-header">
+                    <h3>Your Shopping Cart</h3>
+                    <button id="close-cart-btn" class="close-btn">&times;</button>
+                </div>
+
+                <div id="cart-items" class="cart-body">
+                    <p class="empty-msg">Your cart is empty.</p>
+                </div>
+
+                <div class="cart-footer">
+                    <div class="cart-total">
+                        <span>Total:</span>
+                        <span id="cart-total-price">Ksh. 0</span>
+                    </div>
+                    <button id="checkout-btn" class="btn-checkout">Order Cart via WhatsApp</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image Lightbox Modal -->
+        <div id="lightbox-modal" class="lightbox-modal">
+            <span id="close-lightbox" class="lightbox-close">&times;</span>
+            <img id="lightbox-img" class="lightbox-content" alt="Enlarged Products Image">
+            <div id="lightbox-caption" class="lightbox-caption"></div>
+        </div>
+
+        <!-- Back to Top Button -->
+        <button id="back-to-top" class="back-to-top" aria-label="Back to Top">↑</button>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Rabet Jewelry and Accessories. All rights reserved.</p>
+        </footer>
+
+        <!-- Connected JS File -->
+         <script src="script.js"></script>
+    </body>
+</html>
+    

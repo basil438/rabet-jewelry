@@ -1,0 +1,565 @@
+/* ==========================================
+   RABET JEWELRY - POSH LUXURY DARK THEME
+   ========================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0b0b0e;
+    color: #f1f1f3;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    line-height: 1.5;
+    padding-bottom: 60px;
+}
+
+/* ==========================================
+   1. POSH CENTERED HEADER & BRAND TITLE
+   ========================================== */
+header, .site-header {
+    text-align: center;
+    padding: 40px 20px 20px 20px;
+    background: linear-gradient(180deg, #13131a 0%, #0b0b0e 100%);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+h1, .brand-title {
+    background: linear-gradient(135deg, #fce09b 0%, #d4af37 50%, #aa8828 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2.8rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    filter: drop-shadow(0 2px 10px rgba(212, 175, 55, 0.25));
+}
+
+header p, .brand-tagline {
+    color: #b0a382;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+/* ==========================================
+   2. POSH CENTERED SEARCH & FILTER HUB
+   ========================================== */
+.store-controls, .controls-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 20px 5%;
+    margin-bottom: 25px;
+}
+
+/* Centered Search Bar */
+#search-input, .search-bar {
+    background: #14141a;
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    color: #ffffff;
+    padding: 12px 22px;
+    border-radius: 30px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    outline: none;
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 6px;
+}
+
+#search-input:focus, .search-bar:focus {
+    border-color: #d4af37;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.25), inset 0 2px 4px rgba(0, 0, 0, 0.5);
+    background: #181820;
+}
+
+/* Centered Posh Filter Buttons */
+.filter-container, .category-filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.filter-btn {
+    background: #14141a;
+    color: #b0b0ba;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    padding: 10px 22px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.filter-btn:hover {
+    background: #1e1e28;
+    color: #ffffff;
+    border-color: rgba(212, 175, 55, 0.6);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.filter-btn.active {
+    background: linear-gradient(135deg, #2b2518 0%, #171510 100%);
+    color: #d4af37;
+    border-color: #d4af37;
+    box-shadow: 0 0 12px rgba(212, 175, 55, 0.25);
+}
+
+/* ==========================================
+   3. PRODUCT CARDS & POSH BUTTONS
+   ========================================== */
+.products-grid, .product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 28px;
+    padding: 20px 5%;
+}
+
+.product-card {
+    background: #121217;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 12px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    border-color: rgba(212, 175, 55, 0.35);
+    transform: translateY(-4px);
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.7);
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 14px;
+}
+
+.product-card h3 {
+    margin-bottom: 6px;
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+
+.product-card p, 
+.product-card .description {
+    font-weight: 300;
+    color: #9ca3af;
+    font-size: 13px;
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+
+.product-card .price {
+    color: #d4af37;
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 14px;
+}
+
+/* Posh Add to Cart Button */
+.product-card button, .add-to-cart-btn {
+    background: linear-gradient(135deg, #1c1c24 0%, #14141a 100%);
+    color: #ffffff;
+    border: 1px solid rgba(212, 175, 55, 0.35);
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    width: 100%;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.product-card button:hover, .add-to-cart-btn:hover {
+    background: linear-gradient(135deg, #d4af37 0%, #aa8828 100%);
+    color: #0b0b0e;
+    border-color: #d4af37;
+    font-weight: 700;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+    transform: translateY(-1px);
+}
+
+.btn-whatsapp-direct {
+    background: #122416;
+    color: #4ade80;
+    border: 1px solid rgba(74, 222, 128, 0.3);
+    padding: 10px 16px;
+    border-radius : 8px;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.3s ease; 
+}
+
+.btn-whatsapp-direct:hover {
+    background: #1b3822;
+    color: #86efac;
+    border-color: #4ade80;
+    box-shadow: 0 0 12px rgba(74, 222, 128, 0.25);
+}
+
+/* ==========================================
+   4. SHOPPING CART OVERLAY & DRAWER
+   ========================================== */
+#cart-overlay, .cart-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(5, 5, 7, 0.85);
+    backdrop-filter: blur(6px);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+#cart-overlay.open, #cart-overlay.active,
+.cart-overlay.open, .cart-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.cart-drawer {
+    position: fixed;
+    top: 0;
+    right: -420px;
+    width: 380px;
+    max-width: 90vw;
+    height: 100%;
+    background: #0e0e12;
+    border-left: 1px solid rgba(212, 175, 55, 0.25);
+    box-shadow: -15px 0 40px rgba(0, 0, 0, 0.85);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    transition: right 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+#cart-overlay.open .cart-drawer,
+#cart-overlay.active .cart-drawer,
+.cart-overlay.open .cart-drawer,
+.cart-overlay.active .cart-drawer {
+    right: 0;
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#close-cart-btn, .close-btn {
+    background: transparent;
+    border: none;
+    color: #c4c4cc;
+    font-size: 22px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+#close-cart-btn:hover, .close-btn:hover {
+    color: #d4af37;
+}
+
+#cart-items, .cart-body {
+    flex: 1;
+    overflow-y: auto;
+    padding: 16px 0;
+}
+
+.empty-msg {
+    color: #8c8c99;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Cart Item Row */
+.cart-item-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.cart-item-row span, .cart-item-title {
+    flex: 1;
+    padding-right: 12px;
+}
+
+.cart-item-row div {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.cart-item-row button {
+    background: #1a1a22;
+    color: #ffffff;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    padding: 4px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 13px;
+    transition: all 0.2s ease;
+}
+
+.cart-item-row button:hover {
+    background: #d4af37;
+    color: #000;
+    border-color: #d4af37;
+}
+
+/* Cart Footer & WhatsApp Checkout */
+.cart-footer {
+    padding-top: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #ffffff;
+}
+
+#cart-total-price {
+    color: #d4af37;
+    font-weight: 700;
+}
+
+#checkout-btn, .btn-checkout {
+    background: #142a1b;
+    color: #4ade80;
+    border: 1px solid rgba(74, 222, 128, 0.4);
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+#checkout-btn:hover, .btn-checkout:hover {
+    background: #1e3d28;
+    border-color: #4ade80;
+    box-shadow: 0 0 15px rgba(74, 222, 128, 0.25);
+}
+
+/* Posh Header Cart Button (Top Right Position) */
+#cart-toggle-btn, .header-cart-btn {
+    position: absolute;
+    top: 25px;
+    right: 5%;
+    background: #14141a;
+    color: #d4af37;
+    border: 1px solid rgba(212, 175, 55, 0.35);
+    padding: 8px 18px;
+    border-radius: 25px; /* Matches the pill-shaped filter buttons */
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+#cart-toggle-btn:hover, .header-cart-btn:hover {
+    background: linear-gradient(135deg, #d4af37 0%, #aa8828 100%);
+    color: #0b0b0e;
+    border-color: #d4af37;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Cart Badge Count Pill inside button */
+#cart-count {
+    background: rgba(212, 175, 55, 0.2);
+    color: #d4af37;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+#cart-toggle-btn:hover #cart-count {
+    background: #0b0b0e;
+    color: #d4af37;
+}
+
+/* ==========================================
+   ENLARGED PRODUCT IMAGE MODAL / POPUP
+   ========================================== */
+
+/* Fullscreen Dark Overlay */
+.modal, .image-modal, #image-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(5, 5, 7, 0.85);
+    backdrop-filter: blur(6px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+/* Show modal when active */
+.modal.active, .image-modal.open, #image-modal.open, .modal.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.lightbox-modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+}
+.lightbox-modal.active {
+    display: flex; /* Shows up when triggered via JS */
+}
+
+/* Modal Box Container */
+.modal-content, .enlarged-content {
+    background: #121217;
+    border: 1px solid rgba(212, 175, 55, 0.35);
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 90vw;
+    max-height: 90vh;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    position: relative;
+}
+
+/* Enlarged Image Inside Modal */
+.modal-content img, .enlarged-content img {
+    max-width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+/* Close Button (X) */
+.modal-close, .close-modal-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    color: #c4c4cc;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.modal-close:hover, .close-modal-btn:hover {
+    color: #d4af37;
+}
+
+/* ==========================================
+   BACK TO TOP BUTTON
+   ========================================== */
+#back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: linear-gradient(135deg, #1c1c24 0%, #14141a 100%);
+    color: #d4af37;
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 999;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+/* Show button when scrolled down */
+#back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+#back-to-top:hover {
+    background: linear-gradient(135deg, #d4af37 0%, #aa8828 100%);
+    color: #0b0b0e;
+    border-color: #d4af37;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(212, 175, 55, 0.3);
+}
